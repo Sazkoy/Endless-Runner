@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endless Runner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+  <button id="restartBtn" onclick="restartGame()" hidden>RESTART</button>
+
+  <!-- Main Menu -->
+  <div class="menu" id="mainMenu">
+    <h1>Endless Runner</h1>
+    <button onclick="startGame()">Play</button>
+    <button onclick="showMapMenu()">Map</button>
+    <button onclick="showShop()">Shop</button>
+    <button onclick="exitGame()">Exit</button>
+  </div>
+
+  <!-- Shop -->
+  <div class="menu" id="shop" hidden>
+    <h2>Shop</h2>
+    <button onclick="buySkin('blue',50)">Blue Skin (50)</button>
+    <button onclick="buySkin('green',100)">Green Skin (100)</button>
+    <button onclick="buySkin('red',0)">Red Skin (Free)</button>
+    <br><button onclick="closeShop()">Back</button>
+  </div>
+
+  <!-- Map Menu -->
+  <div class="menu" id="mapMenu" hidden>
+    <h2>Maps</h2>
+    <button onclick="setMap('forest')">🌴 Forest</button>
+    <button onclick="setMap('desert')">🏜️ Desert</button>
+    <button onclick="setMap('space')">🌌 Space</button>
+    <br><button onclick="closeMapMenu()">Back</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

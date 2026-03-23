@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial;
+  background: linear-gradient(to bottom, #222, #111);
+  color: white;
+  touch-action: none;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  background: #000;
+}
+
+/* Menus */
+.menu, #shop, #mapMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(20,20,20,0.95);
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.menu h1 {
+  margin-bottom: 15px;
+}
+
+.menu button, #shop button, #mapMenu button {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background: #ff3c3c;
+  color: white;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background: #ff1f1f;
+}
+
+/* Jump Button */
+#jumpBtn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  opacity: 0.7;
+}
+
+/* Restart Button */
+#restartBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 20px;
+  border-radius: 50%;
+  border: none;
+  background: #00c853;
+  color: white;
+  font-size: 14px;
+  display: none;
+}
